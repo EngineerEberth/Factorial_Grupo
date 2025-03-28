@@ -42,7 +42,11 @@ public class Factorial {
 
     //verificar si un número es entero (no fracciones ni decimales)
     public static boolean esEntero(double num) {
-
+        try {
+                return (int) num == num;
+            } catch (Exception e) {
+                return false;
+            }
     }
 
     // calcular factorial de números grandes utilizando BigInteger (usa esto)
