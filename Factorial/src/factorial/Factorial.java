@@ -16,6 +16,7 @@ public class Factorial {
     public static void main(String[] args) {
         // TODO code application logic here
         int a =20;
+        int b = 30;
     }
     
 }
