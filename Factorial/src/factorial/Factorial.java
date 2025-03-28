@@ -43,7 +43,7 @@ public class Factorial {
 
     // verificar si es válido (no letras ni caracteres)
     public static boolean esNumeroValido(String input) {
-
+        return input.matches("\\d+");
     }
 
 }
