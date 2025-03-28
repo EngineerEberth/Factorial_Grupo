@@ -4,6 +4,7 @@
  */
 package factorial;
 
+import java.math.BigInteger;
 import java.util.Scanner;
 
 /**
@@ -46,7 +47,11 @@ public class Factorial {
 
     // calcular factorial de números grandes utilizando BigInteger (usa esto)
     public static java.math.BigInteger factorialGrande(int n) {
-
+          BigInteger resultado = BigInteger.ONE;
+        for (int i = 2; i <= n; i++) {
+            resultado = resultado.multiply(BigInteger.valueOf(i));
+        }
+        return resultado;
     }
 
     // verificar si es válido (no letras ni caracteres)
