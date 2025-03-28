@@ -4,6 +4,8 @@
  */
 package factorial;
 
+import java.util.Scanner;
+
 /**
  *
  * @author ebert
@@ -15,15 +17,21 @@ public class Factorial {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int a =20;
-        int b = 30;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ingrese un número para calcular su factorial: ");
+        int n = scanner.nextInt();
+
+        long resultado = factorialRecursivo(n);
+        System.out.println("El factorial de " + n + " es: " + resultado);
+
     }
 
     // n es la variable global
 
     //recursivo para calcular el factorial
     public static long factorialRecursivo(int n) {
-        n = 0;
+
+        return (n == 0 || n == 1) ? 1 : n * factorialRecursivo(n - 1);
     }
 
     // si un numero es mayor a 0 y no negativos
