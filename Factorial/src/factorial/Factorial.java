@@ -37,7 +37,7 @@ public class Factorial {
 
     // si un numero es mayor a 0 y no negativos
     public static boolean esMayorAZero(int n) {
-
+        return n > 0;
     }
 
     //verificar si un número es entero (no fracciones ni decimales)
